@@ -13,7 +13,7 @@ export default function SearchBox(props:DataType) {
   return (
     <Fragment>
       <Drawer
-        title="Create a new account"
+        title="Create a new Search"
         width={720}
         onClose={props.onClose}
         visible={props.visable}
@@ -22,7 +22,7 @@ export default function SearchBox(props:DataType) {
           <Space>
             <Button onClick={props.onClose}>Cancel</Button>
             <Button onClick={props.onClose} type="primary">
-              Submit
+              Search
             </Button>
           </Space>
         }
@@ -32,10 +32,10 @@ export default function SearchBox(props:DataType) {
             <Col span={12}>
               <Form.Item
                 name="name"
-                label="Name"
-                rules={[{ required: true, message: 'Please enter user name' }]}
+                label="AssetCode"
+                rules={[{ required: true, message: 'Please enter AssetCode' }]}
               >
-                <Input placeholder="Please enter user name" />
+                <Input placeholder="Please enter AssetCode" />
               </Form.Item>
             </Col>
             <Col span={12}>
